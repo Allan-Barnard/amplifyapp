@@ -9,12 +9,16 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/LOGO_Apps_Associates.png" />
+	
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+	
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,21 +28,81 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
+	
+    <title>Apps Associates App-Dev UI</title>
+
+	<style>
+		.cssDivSimple {
+						border: 4px #e600e6;
+						border-style: solid;
+						background-color: lightblue;
+						text-align: center;
+						padding: 0px;
+						margin: 0px;
+		}
+		.br {
+            display: block;
+            margin-bottom: 0pt;
+        }
+          
+        .brmedium {
+            display: block;
+            margin-bottom: 1pt;
+        }
+          
+        .brlarge {
+            display: block;
+            margin-bottom: 2pt;
+        }		
+	</style>
+	
+</head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-	<center><h1>Hello World!</h1></center>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+	<div id="divIndexBody" class="cssDivSimple">
+	
+		<span class="brlarge"></span> 
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+		<div id="divTitleMain" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+
+			<center>
+				<h1 style="border: 2px solid #000000; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+					Index.html: Hello World!
+				</h1>
+			</center>
+
+		</div>
+
+		<!-- 
+			<noscript>You need to enable JavaScript to run this app.</noscript> 
+		-->
+
+		<span class="brmedium"></span> 
+
+		
+		<div id="root" style="border: 2px solid #0033cc;">
+			<!--
+				This is where later Apps.js content will go.
+				
+				This essentially the core of your application.
+			-->
+		</div>
+
+		<span class="brlarge"></span> 
+
+		
+			<!--
+			  This HTML file is a template.
+			  If you open it directly in the browser, you will see an empty page.
+
+			  You can add webfonts, meta tags, or analytics to this file.
+			  The build step will place the bundled scripts into the <body> tag.
+
+			  To begin the development, run `npm start` or `yarn start`.
+			  To create a production bundle, use `npm run build` or `yarn build`.
+			-->
+		
+	</div>  
   </body>
 </html>

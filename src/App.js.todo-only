@@ -5,47 +5,15 @@ import { createTodo } from './graphql/mutations'
 import { listTodos } from './graphql/queries'
 import Title from './Title';
 
-import logo from "./LOGO_Apps_Associates_144w.png";
-import "@aws-amplify/ui-react/styles.css";
-import {
-  withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
-} from "@aws-amplify/ui-react";
-
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
-
-
-/* START OF INSERT */
-
-	/*
-	function App({ signOut }) {
-	  return (
-		<View className="App">
-		  <Card>
-			<Image src={logo} className="App-logo" alt="logo" />
-			<Heading level={1}>We now have Auth!</Heading>
-		  </Card>
-		  <Button onClick={signOut}>Sign Out</Button>
-		</View>
-	  );
-	}
-
-	export default withAuthenticator(App);
-	*/
-
-/* END OF INSERT */
-
 
 const initialState = { name: '', description: '' }
 
 const App = () => {
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
+
 
   useEffect(() => {
     fetchTodos()
@@ -76,11 +44,7 @@ const App = () => {
   }
 
   return (
-  
     <div style={styles.container}>
-      <Card>
-        <Image src={logo} className="App-logo" alt="logo" />
-      </Card>
       <h2>Amplify Todos</h2>
       <input
         onChange={event => setInput('name', event.target.value)}
@@ -103,9 +67,7 @@ const App = () => {
           </div>
         ))
       }
-	
-	</div>
-	
+    </div>
   )
 }
 

@@ -7,6 +7,11 @@
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
+	{
+      "src": "LOGO_Apps_Associates.png",
+      "type": "image/png",
+      "sizes": "1033x25"
+    },
     {
       "src": "logo192.png",
       "type": "image/png",
