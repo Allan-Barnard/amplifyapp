@@ -13,7 +13,8 @@ import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
 import { createTodo } from './graphql/mutations'
 import { listTodos } from './graphql/queries'
-import Title from './Title';
+import Title from './Components/Title';
+import Footer from './Components/Footer';
 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -58,6 +59,7 @@ function App({ signOut }) {
       <Card>
         <Image src={logo} className="App-logo" alt="logo" />
 		<div style={styles.container}>
+		  <Title />
 		  <h2>Amplify Todos</h2>
 		  <input
 		  onChange={event => setInput('name', event.target.value)}
@@ -80,6 +82,7 @@ function App({ signOut }) {
             </div>
             ))
           }
+		  <Footer />
 		</div>
       </Card>
       <Button onClick={signOut}>Sign Out</Button>
