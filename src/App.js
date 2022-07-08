@@ -65,6 +65,7 @@ function App({ signOut }) {
 			<Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
 			<div id="page-wrap">
 			  <h1>Check the application menu</h1>
+			  <hr/>
 			</div>
 		  </div>
 		  <h2>Amplify Todos</h2>
