@@ -55,6 +55,16 @@ function App({ signOut }) {
     }
   }
   
+  async function deleteTodo() {
+	  try{
+		  todos.splice(0, 1)
+		  setFormState(initialState)
+		  await API.graphql(graphqlOperation(deleteTodo, {input: todos[0]}))
+	  } catch (err) {
+		  console.log('error deleting todo:', err)
+	  }
+  }
+  
   return (
     <View className="App">
       <Card>
@@ -82,6 +92,8 @@ function App({ signOut }) {
 		  placeholder="Description"
 		  />
 		  <button style={styles.button} onClick={addTodo}>Create Todo</button>
+		  <hr/>
+		  <button style={styles.button} onClick={deleteTodo}>Delete Todo</button>
 		  {
             todos.map((todo, index) => (
             <div key={todo.id ? todo.id : index} style={styles.todo}>
