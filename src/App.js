@@ -15,6 +15,7 @@ import { createTodo } from './graphql/mutations'
 import { listTodos } from './graphql/queries'
 import Title from './Components/Title';
 import Footer from './Components/Footer';
+import Sidebar from './Components/Sidebar';
 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -60,6 +61,12 @@ function App({ signOut }) {
         <Image src={logo} className="App-logo" alt="logo" />
 		<div style={styles.container}>
 		  <Title />
+		  <div className="App" id="outer-container">
+			<Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+			<div id="page-wrap">
+			  <h1>Check the application menu</h1>
+			</div>
+		  </div>
 		  <h2>Amplify Todos</h2>
 		  <input
 		  onChange={event => setInput('name', event.target.value)}
