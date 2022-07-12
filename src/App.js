@@ -1,4 +1,5 @@
-/* src/App.js */
+import { useRoutes } from "react-router-dom";
+import Themeroutes from "./routes/Router";
 import logo from "./LOGO_Apps_Associates_144w.png";
 import "@aws-amplify/ui-react/styles.css";
 import {
@@ -11,104 +12,28 @@ import {
 } from "@aws-amplify/ui-react";
 import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
-import { createTodo } from './graphql/mutations'
-import { listTodos } from './graphql/queries'
-import Title from './Components/Title';
-import Footer from './Components/Footer';
-import Sidebar from './Components/Sidebar';
 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
 const initialState = { name: '', description: '' }
 
-function App({ signOut }) {
-	
+function App({signOut}) {
+  const routing = useRoutes(Themeroutes);
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
-  
-  function setInput(key, value) {
-  setFormState({ ...formState, [key]: value })
-  }
-  
-  useEffect(() => {
-    fetchTodos()
-  }, [])
-  
-  async function fetchTodos() {
-    try {
-      const todoData = await API.graphql(graphqlOperation(listTodos))
-      const todos = todoData.data.listTodos.items
-      setTodos(todos)
-    } catch (err) { console.log('error fetching todos') }
-  }
-  
-  async function addTodo() {
-    try {
-      if (!formState.name || !formState.description) return
-      const todo = { ...formState }
-      setTodos([...todos, todo])
-      setFormState(initialState)
-      await API.graphql(graphqlOperation(createTodo, {input: todo}))
-    } catch (err) {
-      console.log('error creating todo:', err)
-    }
-  }
-  
-  async function deleteTodo() {
-	  try{
-		  todos.splice(0, 1)
-		  setFormState(initialState)
-		  await API.graphql(graphqlOperation(deleteTodo, {input: todos[0]}))
-	  } catch (err) {
-		  console.log('error deleting todo:', err)
-	  }
-  }
   
   return (
     <View className="App">
       <Card>
         <Image src={logo} className="App-logo" alt="logo" />
-		<div style={styles.container}>
-		  <Title />
-		  <div className="App" id="outer-container">
-			<Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-			<div id="page-wrap">
-			  <h1>Check the application menu</h1>
-			  <hr/>
-			</div>
-		  </div>
-		  <h2>Amplify Todos</h2>
-		  <input
-		  onChange={event => setInput('name', event.target.value)}
-		  style={styles.input}
-		  value={formState.name}
-		  placeholder="Name"
-		  />
-		  <input
-		  onChange={event => setInput('description', event.target.value)}
-		  style={styles.input}
-		  value={formState.description}
-		  placeholder="Description"
-		  />
-		  <button style={styles.button} onClick={addTodo}>Create Todo</button>
-		  <hr/>
-		  <button style={styles.button} onClick={deleteTodo}>Delete Todo</button>
-		  {
-            todos.map((todo, index) => (
-            <div key={todo.id ? todo.id : index} style={styles.todo}>
-              <p style={styles.todoName}>{todo.name}</p>
-              <p style={styles.todoDescription}>{todo.description}</p>
-            </div>
-            ))
-          }
-		  <Footer />
-		</div>
+		<h1>AI/ML Apps Associates</h1>
       </Card>
       <Button onClick={signOut}>Sign Out</Button>
+	  <div className="dark">{routing}</div>
     </View>
   );
-}
+};
 
 const styles = {
   container: { width: 400, margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
