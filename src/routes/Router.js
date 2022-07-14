@@ -16,6 +16,10 @@ const Grid = lazy(() => import("../views/ui/Grid"));
 const Tables = lazy(() => import("../views/ui/Tables"));
 const Forms = lazy(() => import("../views/ui/Forms"));
 const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
+const AIML = lazy(() => import("../views/AIML.js"));
+const Appdev = lazy(() => import("../views/Appdev.js"));
+const Acme = lazy(() => import("../views/Acme.js"));
+const Smithco = lazy(() => import("../views/Smithco.js"));
 
 /*****Routes******/
 
@@ -35,6 +39,10 @@ const ThemeRoutes = [
       { path: "/table", exact: true, element: <Tables /> },
       { path: "/forms", exact: true, element: <Forms /> },
       { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
+	  { path: "/AIML", exact: true, element: <AIML /> },
+	  { path: "/Appdev", exact: true, element: <Appdev /> },
+	  { path: "/Acme", exact: true, element: <Acme /> },
+	  { path: "/Smithco", exact: true, element: <Smithco /> },
     ],
   },
 ];

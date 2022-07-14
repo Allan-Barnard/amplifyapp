@@ -8,7 +8,7 @@ import bg1 from "../assets/images/bg/bg1.jpg";
 import bg2 from "../assets/images/bg/bg2.jpg";
 import bg3 from "../assets/images/bg/bg3.jpg";
 import bg4 from "../assets/images/bg/bg4.jpg";
-import Header from "../layouts/Header";
+import AIML_Header from "../layouts/AIML_Header";
 
 const BlogData = [
   {
@@ -45,10 +45,10 @@ const BlogData = [
   },
 ];
 
-const Starter = () => {
+const AIML = () => {
   return (
     <div>
-	<Header />
+	<AIML_Header />
       {/***Top Cards***/}
       <Row>
         <Col sm="6" lg="3">
@@ -121,4 +121,4 @@ const Starter = () => {
   );
 };
 
-export default Starter;
+export default AIML;

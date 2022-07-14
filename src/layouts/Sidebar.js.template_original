@@ -4,29 +4,54 @@ import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   {
-    title: "Home",
+    title: "Dashboard",
     href: "/starter",
-    icon: "bi bi-house",
+    icon: "bi bi-speedometer2",
   },
   {
-    title: "AI/ML",
-    href: "/aiml",
-    icon: "bi bi-activity",
+    title: "Alert",
+    href: "/alerts",
+    icon: "bi bi-bell",
   },
   {
-    title: "Apps APP-DEV",
-    href: "/appdev",
-    icon: "bi bi-app-indicator",
+    title: "Badges",
+    href: "/badges",
+    icon: "bi bi-patch-check",
   },
   {
-    title: "Client ACME",
-    href: "/acme",
-    icon: "bi bi-cart",
+    title: "Buttons",
+    href: "/buttons",
+    icon: "bi bi-hdd-stack",
   },
   {
-    title: "Client SMITHCO",
-    href: "/smithco",
-    icon: "bi bi-hammer",
+    title: "Cards",
+    href: "/cards",
+    icon: "bi bi-card-text",
+  },
+  {
+    title: "Grid",
+    href: "/grid",
+    icon: "bi bi-columns",
+  },
+  {
+    title: "Table",
+    href: "/table",
+    icon: "bi bi-layout-split",
+  },
+  {
+    title: "Forms",
+    href: "/forms",
+    icon: "bi bi-textarea-resize",
+  },
+  {
+    title: "Breadcrumbs",
+    href: "/breadcrumbs",
+    icon: "bi bi-link",
+  },
+  {
+    title: "About",
+    href: "/about",
+    icon: "bi bi-people",
   },
 ];
 
