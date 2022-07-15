@@ -89,6 +89,9 @@ const AIML = () => {
         </Col>
       </Row>
       {/***Sales & Feed***/}
+	  <Row>
+	    <a href="http://172.26.11.182:8080/DataGen/index.html">Data: Inbound to AWS</a>
+	  </Row>
       <Row>
         <Col sm="6" lg="6" xl="7" xxl="8">
           <SalesChart />

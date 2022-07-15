@@ -16,7 +16,15 @@ const Grid = lazy(() => import("../views/ui/Grid"));
 const Tables = lazy(() => import("../views/ui/Tables"));
 const Forms = lazy(() => import("../views/ui/Forms"));
 const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
+
 const AIML = lazy(() => import("../views/AIML.js"));
+const AIML_user_management = lazy(() => import ("../views/AIML/AIML_user_management"));
+const AIML_data_to_AWS = lazy(() => import ("../views/AIML/AIML_data_to_AWS"));
+const AIML_prepare_engine_run = lazy(() => import ("../views/AIML/AIML_prepare_engine_run"));
+const AIML_engine_run = lazy(() => import ("../views/AIML/AIML_engine_run"));
+const AIML_output = lazy(() => import ("../views/AIML/AIML_output"));
+const AIML_data_to_client= lazy(() => import ("../views/AIML/AIML_data_to_client"));
+
 const Appdev = lazy(() => import("../views/Appdev.js"));
 const Acme = lazy(() => import("../views/Acme.js"));
 const Smithco = lazy(() => import("../views/Smithco.js"));
@@ -39,7 +47,15 @@ const ThemeRoutes = [
       { path: "/table", exact: true, element: <Tables /> },
       { path: "/forms", exact: true, element: <Forms /> },
       { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
+	  
 	  { path: "/AIML", exact: true, element: <AIML /> },
+	  { path: "/AIML/AIML_user_management", exact: true, element: <AIML_user_management /> },
+	  { path: "/AIML/AIML_data_to_AWS", exact: true, element: <AIML_data_to_AWS /> },
+	  { path: "/AIML/AIML_prepare_engine_run", exact: true, element: <AIML_prepare_engine_run /> },
+	  { path: "/AIML/AIML_engine_run", exact: true, element: <AIML_engine_run /> },
+	  { path: "/AIML/AIML_output", exact: true, element: <AIML_output /> },
+	  { path: "/AIML/AIML_data_to_client", exact: true, element: <AIML_data_to_client /> },
+	  
 	  { path: "/Appdev", exact: true, element: <Appdev /> },
 	  { path: "/Acme", exact: true, element: <Acme /> },
 	  { path: "/Smithco", exact: true, element: <Smithco /> },
