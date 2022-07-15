@@ -79,25 +79,6 @@ const Header = () => {
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
-        <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle color="primary">
-            <img
-              src={user1}
-              alt="profile"
-              className="rounded-circle"
-              width="30"
-            ></img>
-          </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem header>Info</DropdownItem>
-            <DropdownItem>My Account</DropdownItem>
-            <DropdownItem>Edit Profile</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem>My Balance</DropdownItem>
-            <DropdownItem>Inbox</DropdownItem>
-            <DropdownItem>Logout</DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
       </Collapse>
     </Navbar>
   );
