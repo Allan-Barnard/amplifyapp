@@ -63,32 +63,32 @@ const Appdev_Header = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/appdev" className="nav-link">
+            <Link to="/appdev/appdev_user_management" className="nav-link">
               User management
             </Link>
           </NavItem>
 		  <NavItem>
-            <Link to="/appdev" className="nav-link">
+            <Link to="/appdev/appdev_data_to_aws" className="nav-link">
               Data: Inbound to AWS
             </Link>
           </NavItem>
 		  <NavItem>
-            <Link to="/appdev" className="nav-link">
+            <Link to="/appdev/appdev_prepare_engine_run" className="nav-link">
               Prepare for engine run
             </Link>
           </NavItem>
 		  <NavItem>
-            <Link to="/appdev" className="nav-link">
+            <Link to="/appdev/appdev_engine_run" className="nav-link">
               Engine run
             </Link>
           </NavItem>
 		  <NavItem>
-            <Link to="/appdev" className="nav-link">
+            <Link to="/appdev/appdev_output" className="nav-link">
               Output review
             </Link>
           </NavItem>
 		  <NavItem>
-            <Link to="/appdev" className="nav-link">
+            <Link to="/appdev/appdev_data_to_client" className="nav-link">
               Data: Outbound to client
             </Link>
           </NavItem>

@@ -26,8 +26,28 @@ const AIML_output = lazy(() => import ("../views/AIML/AIML_output"));
 const AIML_data_to_client= lazy(() => import ("../views/AIML/AIML_data_to_client"));
 
 const Appdev = lazy(() => import("../views/Appdev.js"));
+const Appdev_user_management = lazy(() => import ("../views/Appdev/Appdev_user_management"));
+const Appdev_data_to_AWS = lazy(() => import ("../views/Appdev/Appdev_data_to_AWS"));
+const Appdev_prepare_engine_run = lazy(() => import ("../views/Appdev/Appdev_prepare_engine_run"));
+const Appdev_engine_run = lazy(() => import ("../views/Appdev/Appdev_engine_run"));
+const Appdev_output = lazy(() => import ("../views/Appdev/Appdev_output"));
+const Appdev_data_to_client= lazy(() => import ("../views/Appdev/Appdev_data_to_client"));
+
 const Acme = lazy(() => import("../views/Acme.js"));
+const Acme_user_management = lazy(() => import ("../views/Acme/Acme_user_management"));
+const Acme_data_to_AWS = lazy(() => import ("../views/Acme/Acme_data_to_AWS"));
+const Acme_prepare_engine_run = lazy(() => import ("../views/Acme/Acme_prepare_engine_run"));
+const Acme_engine_run = lazy(() => import ("../views/Acme/Acme_engine_run"));
+const Acme_output = lazy(() => import ("../views/Acme/Acme_output"));
+const Acme_data_to_client= lazy(() => import ("../views/Acme/Acme_data_to_client"));
+
 const Smithco = lazy(() => import("../views/Smithco.js"));
+const Smithco_user_management = lazy(() => import ("../views/Smithco/Smithco_user_management"));
+const Smithco_data_to_AWS = lazy(() => import ("../views/Smithco/Smithco_data_to_AWS"));
+const Smithco_prepare_engine_run = lazy(() => import ("../views/Smithco/Smithco_prepare_engine_run"));
+const Smithco_engine_run = lazy(() => import ("../views/Smithco/Smithco_engine_run"));
+const Smithco_output = lazy(() => import ("../views/Smithco/Smithco_output"));
+const Smithco_data_to_client= lazy(() => import ("../views/Smithco/Smithco_data_to_client"));
 
 /*****Routes******/
 
@@ -57,8 +77,28 @@ const ThemeRoutes = [
 	  { path: "/AIML/AIML_data_to_client", exact: true, element: <AIML_data_to_client /> },
 	  
 	  { path: "/Appdev", exact: true, element: <Appdev /> },
+	  { path: "/Appdev/Appdev_user_management", exact: true, element: <Appdev_user_management /> },
+	  { path: "/Appdev/Appdev_data_to_AWS", exact: true, element: <Appdev_data_to_AWS /> },
+	  { path: "/Appdev/Appdev_prepare_engine_run", exact: true, element: <Appdev_prepare_engine_run /> },
+	  { path: "/Appdev/Appdev_engine_run", exact: true, element: <Appdev_engine_run /> },
+	  { path: "/Appdev/Appdev_output", exact: true, element: <Appdev_output /> },
+	  { path: "/Appdev/Appdev_data_to_client", exact: true, element: <Appdev_data_to_client /> },
+	  
 	  { path: "/Acme", exact: true, element: <Acme /> },
+	  { path: "/Acme/Acme_user_management", exact: true, element: <Acme_user_management /> },
+	  { path: "/Acme/Acme_data_to_AWS", exact: true, element: <Acme_data_to_AWS /> },
+	  { path: "/Acme/Acme_prepare_engine_run", exact: true, element: <Acme_prepare_engine_run /> },
+	  { path: "/Acme/Acme_engine_run", exact: true, element: <Acme_engine_run /> },
+	  { path: "/Acme/Acme_output", exact: true, element: <Acme_output /> },
+	  { path: "/Acme/Acme_data_to_client", exact: true, element: <Acme_data_to_client /> },
+	  
 	  { path: "/Smithco", exact: true, element: <Smithco /> },
+	  { path: "/Smithco/Smithco_user_management", exact: true, element: <Smithco_user_management /> },
+	  { path: "/Smithco/Smithco_data_to_AWS", exact: true, element: <Smithco_data_to_AWS /> },
+	  { path: "/Smithco/Smithco_prepare_engine_run", exact: true, element: <Smithco_prepare_engine_run /> },
+	  { path: "/Smithco/Smithco_engine_run", exact: true, element: <Smithco_engine_run /> },
+	  { path: "/Smithco/Smithco_output", exact: true, element: <Smithco_output /> },
+	  { path: "/Smithco/Smithco_data_to_client", exact: true, element: <Smithco_data_to_client /> },
     ],
   },
 ];
