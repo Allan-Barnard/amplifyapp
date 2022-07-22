@@ -49,6 +49,9 @@ const Starter = () => {
   return (
     <div>
 	<Header />
+	  <h1>
+	  Hello Newbies!
+	  </h1>
       {/***Top Cards***/}
       <Row>
         <Col sm="6" lg="3">
