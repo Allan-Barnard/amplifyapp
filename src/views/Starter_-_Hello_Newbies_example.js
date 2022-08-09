@@ -8,7 +8,7 @@ import bg1 from "../assets/images/bg/bg1.jpg";
 import bg2 from "../assets/images/bg/bg2.jpg";
 import bg3 from "../assets/images/bg/bg3.jpg";
 import bg4 from "../assets/images/bg/bg4.jpg";
-import AIML_Header from "../layouts/AIML_Header";
+import Header from "../layouts/Header";
 
 const BlogData = [
   {
@@ -45,10 +45,16 @@ const BlogData = [
   },
 ];
 
-const AIML = () => {
+const Starter = () => {
   return (
     <div>
-	<AIML_Header />
+	<Header />
+	<!--
+	  <h1>
+	  Hello Newbies!
+	  </h1>
+	-->
+	
       {/***Top Cards***/}
       <Row>
         <Col sm="6" lg="3">
@@ -89,9 +95,6 @@ const AIML = () => {
         </Col>
       </Row>
       {/***Sales & Feed***/}
-	  <Row>
-	    <a href="http://18.212.18.67">AI/ML Data-generation and processing on AWS Windows server</a>
-	  </Row>
       <Row>
         <Col sm="6" lg="6" xl="7" xxl="8">
           <SalesChart />
@@ -124,4 +127,4 @@ const AIML = () => {
   );
 };
 
-export default AIML;
+export default Starter;
