@@ -90,7 +90,7 @@ const AIML = () => {
       </Row>
       {/***Sales & Feed***/}
 	  <Row>
-	    <a href="http://18.212.18.67">AI/ML Data-generation and processing on AWS Windows server</a>
+	    <a href="http://18.212.18.67:80/index_public.html">AI/ML Data-generation and processing on AWS Windows server</a>
 	  </Row>
       <Row>
         <Col sm="6" lg="6" xl="7" xxl="8">
