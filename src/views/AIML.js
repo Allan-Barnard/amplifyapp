@@ -90,7 +90,7 @@ const AIML = () => {
       </Row>
       {/***Sales & Feed***/}
 	  <Row>
-	    <a href="http://18.212.18.67:8080/DataGen/python_datagen/Data_item_output.html">Data: Inbound to AWS</a>
+	    <a href="http://18.212.18.67:8000/cgi-bin/python_datagen/DataGen_1210_Generate_items_initial.py">Data: Inbound to AWS</a>
 	  </Row>
       <Row>
         <Col sm="6" lg="6" xl="7" xxl="8">
