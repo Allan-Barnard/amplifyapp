@@ -27,6 +27,7 @@ function App({signOut}) {
     <View className="App">
       <Card>
         <Image src={logo} className="App-logo" alt="logo" />
+		/* <h3>Hello World!</h3> */
 		<Button onClick={signOut} marginLeft="75%">Sign Out</Button>
 		<h1>AI/ML Apps Associates</h1>
       </Card>
