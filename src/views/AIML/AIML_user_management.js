@@ -1,9 +1,34 @@
 import AIML_Header from "../../layouts/AIML_Header";
-import { Card, CardBody } from "reactstrap";
+import { CardBody } from "reactstrap";
 
-const AIML_user_management = () => {
+import { useRoutes } from "react-router-dom";
+import Themeroutes from "../../routes/Router";
+import logo from "../../LOGO_Apps_Associates_144w.png";
+import "@aws-amplify/ui-react/styles.css";
+import {
+	withAuthenticator,
+	Button,
+	Heading,
+	Image,
+	View,
+	Card,
+  } from "@aws-amplify/ui-react";
+  import React, { useEffect, useState } from 'react'
+  import Amplify, { API, graphqlOperation } from 'aws-amplify'
+  
+  import awsExports from "../../aws-exports";
+
+  const initialState = { name: '', description: '' }
+
+function App({signOut}) {
+  const routing = useRoutes(Themeroutes);
+  const [formState, setFormState] = useState(initialState)
+  const [todos, setTodos] = useState([])
+  
   return (
-	<div>
+    <View className="App">
+
+<div>
       <AIML_Header />
 	<Card>
 	  <CardBody classname="">
@@ -15,7 +40,13 @@ const AIML_user_management = () => {
 	  </CardBody>
 	</Card>
 	</div>
+
+      <Card>
+		<Button onClick={signOut}>Create User</Button>
+      </Card>
+    </View>
   );
 };
 
-export default AIML_user_management;
+			
+export default withAuthenticator(App);
