@@ -28,6 +28,26 @@ const navigation = [
     href: "/smithco",
     icon: "bi bi-hammer",
   },
+  {
+    title: "Template Sample 1",
+    href: "/templatesample1",
+    icon: "bi bi-house",
+  },  
+  {
+    title: "Template Sample 2",
+    href: "/templatesample2",
+    icon: "bi bi-app-indicator",
+  },
+  {
+    title: "Template Sample 3",
+    href: "/templatesample3",
+    icon: "bi bi-cart",
+  },
+  {
+    title: "Template Sample 4",
+    href: "/TemplateSample4",
+    icon: "bi bi-hammer",
+  } 
 ];
 
 const Sidebar = () => {
