@@ -49,6 +49,38 @@ const Smithco_engine_run = lazy(() => import ("../views/Smithco/Smithco_engine_r
 const Smithco_output = lazy(() => import ("../views/Smithco/Smithco_output"));
 const Smithco_data_to_client= lazy(() => import ("../views/Smithco/Smithco_data_to_client"));
 
+const TemplateSample1 = lazy(() => import("../views/TemplateSample1.js"));
+const TemplateSample1_user_management = lazy(() => import ("../views/TemplateSample1/TemplateSample1_user_management"));
+const TemplateSample1_data_to_AWS = lazy(() => import ("../views/TemplateSample1/TemplateSample1_data_to_AWS"));
+const TemplateSample1_prepare_engine_run = lazy(() => import ("../views/TemplateSample1/TemplateSample1_prepare_engine_run"));
+const TemplateSample1_engine_run = lazy(() => import ("../views/TemplateSample1/TemplateSample1_engine_run"));
+const TemplateSample1_output = lazy(() => import ("../views/TemplateSample1/TemplateSample1_output"));
+const TemplateSample1_data_to_client= lazy(() => import ("../views/TemplateSample1/TemplateSample1_data_to_client"));
+
+const TemplateSample2 = lazy(() => import("../views/TemplateSample2.js"));
+const TemplateSample2_user_management = lazy(() => import ("../views/TemplateSample2/TemplateSample2_user_management"));
+const TemplateSample2_data_to_AWS = lazy(() => import ("../views/TemplateSample2/TemplateSample2_data_to_AWS"));
+const TemplateSample2_prepare_engine_run = lazy(() => import ("../views/TemplateSample2/TemplateSample2_prepare_engine_run"));
+const TemplateSample2_engine_run = lazy(() => import ("../views/TemplateSample2/TemplateSample2_engine_run"));
+const TemplateSample2_output = lazy(() => import ("../views/TemplateSample2/TemplateSample2_output"));
+const TemplateSample2_data_to_client= lazy(() => import ("../views/TemplateSample2/TemplateSample2_data_to_client"));
+
+const TemplateSample3 = lazy(() => import("../views/TemplateSample3.js"));
+const TemplateSample3_user_management = lazy(() => import ("../views/TemplateSample3/TemplateSample3_user_management"));
+const TemplateSample3_data_to_AWS = lazy(() => import ("../views/TemplateSample3/TemplateSample3_data_to_AWS"));
+const TemplateSample3_prepare_engine_run = lazy(() => import ("../views/TemplateSample3/TemplateSample3_prepare_engine_run"));
+const TemplateSample3_engine_run = lazy(() => import ("../views/TemplateSample3/TemplateSample3_engine_run"));
+const TemplateSample3_output = lazy(() => import ("../views/TemplateSample3/TemplateSample3_output"));
+const TemplateSample3_data_to_client= lazy(() => import ("../views/TemplateSample3/TemplateSample3_data_to_client"));
+
+const TemplateSample4 = lazy(() => import("../views/TemplateSample4.js"));
+const TemplateSample4_user_management = lazy(() => import ("../views/TemplateSample4/TemplateSample4_user_management"));
+const TemplateSample4_data_to_AWS = lazy(() => import ("../views/TemplateSample4/TemplateSample4_data_to_AWS"));
+const TemplateSample4_prepare_engine_run = lazy(() => import ("../views/TemplateSample4/TemplateSample4_prepare_engine_run"));
+const TemplateSample4_engine_run = lazy(() => import ("../views/TemplateSample4/TemplateSample4_engine_run"));
+const TemplateSample4_output = lazy(() => import ("../views/TemplateSample4/TemplateSample4_output"));
+const TemplateSample4_data_to_client= lazy(() => import ("../views/TemplateSample4/TemplateSample4_data_to_client"));
+
 /*****Routes******/
 
 const ThemeRoutes = [
@@ -99,7 +131,39 @@ const ThemeRoutes = [
 	  { path: "/Smithco/Smithco_engine_run", exact: true, element: <Smithco_engine_run /> },
 	  { path: "/Smithco/Smithco_output", exact: true, element: <Smithco_output /> },
 	  { path: "/Smithco/Smithco_data_to_client", exact: true, element: <Smithco_data_to_client /> },
-    ],
+
+	  { path: "/TemplateSample1", exact: true, element: <TemplateSample1 /> },
+	  { path: "/TemplateSample1/TemplateSample1_user_management", exact: true, element: <TemplateSample1_user_management /> },
+	  { path: "/TemplateSample1/TemplateSample1_data_to_AWS", exact: true, element: <TemplateSample1_data_to_AWS /> },
+	  { path: "/TemplateSample1/TemplateSample1_prepare_engine_run", exact: true, element: <TemplateSample1_prepare_engine_run /> },
+	  { path: "/TemplateSample1/TemplateSample1_engine_run", exact: true, element: <TemplateSample1_engine_run /> },
+	  { path: "/TemplateSample1/TemplateSample1_output", exact: true, element: <TemplateSample1_output /> },
+	  { path: "/TemplateSample1/TemplateSample1_data_to_client", exact: true, element: <TemplateSample1_data_to_client /> },	  
+
+	  { path: "/TemplateSample2", exact: true, element: <TemplateSample2 /> },
+	  { path: "/TemplateSample2/TemplateSample2_user_management", exact: true, element: <TemplateSample2_user_management /> },
+	  { path: "/TemplateSample2/TemplateSample2_data_to_AWS", exact: true, element: <TemplateSample2_data_to_AWS /> },
+	  { path: "/TemplateSample2/TemplateSample2_prepare_engine_run", exact: true, element: <TemplateSample2_prepare_engine_run /> },
+	  { path: "/TemplateSample2/TemplateSample2_engine_run", exact: true, element: <TemplateSample2_engine_run /> },
+	  { path: "/TemplateSample2/TemplateSample2_output", exact: true, element: <TemplateSample2_output /> },
+	  { path: "/TemplateSample2/TemplateSample2_data_to_client", exact: true, element: <TemplateSample2_data_to_client /> },	  
+
+	  { path: "/TemplateSample3", exact: true, element: <TemplateSample3 /> },
+	  { path: "/TemplateSample3/TemplateSample3_user_management", exact: true, element: <TemplateSample3_user_management /> },
+	  { path: "/TemplateSample3/TemplateSample3_data_to_AWS", exact: true, element: <TemplateSample3_data_to_AWS /> },
+	  { path: "/TemplateSample3/TemplateSample3_prepare_engine_run", exact: true, element: <TemplateSample3_prepare_engine_run /> },
+	  { path: "/TemplateSample3/TemplateSample3_engine_run", exact: true, element: <TemplateSample3_engine_run /> },
+	  { path: "/TemplateSample3/TemplateSample3_output", exact: true, element: <TemplateSample3_output /> },
+	  { path: "/TemplateSample3/TemplateSample3_data_to_client", exact: true, element: <TemplateSample3_data_to_client /> },	  
+
+	  { path: "/TemplateSample4", exact: true, element: <TemplateSample4 /> },
+	  { path: "/TemplateSample4/TemplateSample4_user_management", exact: true, element: <TemplateSample4_user_management /> },
+	  { path: "/TemplateSample4/TemplateSample4_data_to_AWS", exact: true, element: <TemplateSample4_data_to_AWS /> },
+	  { path: "/TemplateSample4/TemplateSample4_prepare_engine_run", exact: true, element: <TemplateSample4_prepare_engine_run /> },
+	  { path: "/TemplateSample4/TemplateSample4_engine_run", exact: true, element: <TemplateSample4_engine_run /> },
+	  { path: "/TemplateSample4/TemplateSample4_output", exact: true, element: <TemplateSample4_output /> },
+	  { path: "/TemplateSample4/TemplateSample4_data_to_client", exact: true, element: <TemplateSample4_data_to_client /> },	  
+	],
   },
 ];
 
