@@ -23,8 +23,11 @@ const AIML = () => {
 	  </Row>
       {/***Table ***/}
       <Row>
+{/*abc*/}
 
-	  <table class="parent1">
+<table class="parent">
+    <td vertical-align="top">
+	  <table class="parent1" align="left">
 
 			  <td align="center" width="434px">
 
@@ -493,6 +496,31 @@ const AIML = () => {
 			  </td>	  
 
 		</table>
+</td>
+<td vertical-align="top" align="left">
+        <table class="parent2" vertical-align="top" align="left">
+
+	 <tr>
+	  <td>
+		<div class="output_html rendered_html output_subarea output_execute_result">
+				<iframe
+					name="iframe1"
+					width="720"
+					height="720"
+					src="http://18.212.18.67/index_iframe_initial.html"
+					frameborder="0"
+					vertical-align="top"
+					allowfullscreen    
+				>
+						{/*-- iFrame content will be inserted here! --> */}
+			</iframe>        
+		</div>
+	  </td>
+	 </tr>
+</table>
+
+</td>
+</table>
 
       </Row>
       {/***Blog Cards***/}
