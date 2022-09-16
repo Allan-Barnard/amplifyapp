@@ -23,10 +23,10 @@ const AIML = () => {
 	  </Row>
       {/***Table ***/}
       <Row>
-{/*abc*/}
+{/*Test Comment*/}
 
 <table class="parent">
-    <td vertical-align="top">
+    <td valign="top">
 	  <table class="parent1" align="left">
 
 			  <td align="center" width="434px">
@@ -497,8 +497,8 @@ const AIML = () => {
 
 		</table>
 </td>
-<td vertical-align="top" align="left">
-        <table class="parent2" vertical-align="top" align="left">
+<td vlign="top" align="left">
+        <table class="parent2" valign="top" align="left">
 
 	 <tr>
 	  <td>
