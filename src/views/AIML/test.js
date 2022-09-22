@@ -1,8 +1,8 @@
 var AWS = require('aws-sdk/dist/aws-sdk-react-native');
 
 AWS.config.update({
-    accessKeyId: "ASIAVLW57Z3HHBQGX5EI",
-    secretAccessKey: "d5McRA6NFZU0SapzPwX70mwXgnF1I+uSuqPRjAko",
+    accessKeyId: "ASIAVLW57Z3HB6XMQTLH",
+    secretAccessKey: "q6/DP79xYW/IPJ89NRFf5cBfbiap4+YYcHvNutwF",
     region: "us-east-1"
 });
 
@@ -21,7 +21,7 @@ cognitoidentityserviceprovider.listUsers(params, (err, data) => {
     }
     else {
         console.log("data", data);
-        console.log('didnt an error');
+        console.log('didnt  an error');
     }
 })
 
