@@ -509,6 +509,7 @@ const AIML = () => {
 					height="720"
 					src="http://18.212.18.67/index_iframe_initial.html"
 					frameborder="0"
+					sandbox='allow-scripts allow-modal' 
 					vertical-align="top"
 					allowfullscreen    
 				>
