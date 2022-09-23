@@ -69,7 +69,7 @@ const AIML_engine_run = () => {
 	 <tr>
 	  <td>
 		<div class="output_html rendered_html output_subarea output_execute_result">
-				<iframe name="iframe1" width="720" height="720" src="http://18.212.18.67/index_iframe_initial.html" frameborder="0" vertical-align="top" allowfullscreen>
+				<iframe name="iframe1" width="720" height="720" src={`http://18.212.18.67/index_iframe_initial.html`} frameborder="0" vertical-align="top" allowfullscreen>
 						{/*-- iFrame content will be inserted here! --> */}
 			</iframe>        
 		</div>
